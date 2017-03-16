@@ -1,0 +1,21 @@
+{
+    "name": "diplodok/yii2-unitegallery-widget",
+    "description": "Простейший виджет на основе галереи Unite Gallery",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","widget","unite gallery"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Александр Кузнецов",
+            "email": "project@birbuh.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "diplodok\\Gallerywidget\\": ""
+        }
+    }
+}
