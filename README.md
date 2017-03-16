@@ -28,10 +28,11 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \diplodok\Gallerywidget\AutoloadExample::widget([
+<?= \diplodok\Gallerywidget\GalleryWidget::widget([
         'title_gallery' => 'Заголовок', // опция
         'photos' => [
 			['src' => '/images/1.jpg', 'alt' => '', 'description' => 'опция'],
 			['src' => '/images/2.jpg', 'alt' => '', 'description' => 'опция'],
 			['src' => '/images/3.jpg', 'alt' => '', 'description' => 'опция']
-		]); ?>```
+		]); ?>
+```
