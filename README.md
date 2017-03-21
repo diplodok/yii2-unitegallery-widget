@@ -1,3 +1,11 @@
+[![Latest Stable Version](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/v/stable.svg)]
+(https://packagist.org/packages/diplodok/yii2-unitegallery-widget) 
+[![Total Downloads](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/downloads.svg)]
+(https://packagist.org/packages/diplodok/yii2-unitegallery-widget) 
+[![Latest Unstable Version](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/v/unstable.svg)]
+(https://packagist.org/packages/diplodok/yii2-unitegallery-widget) 
+[![License](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/license.svg)]
+(https://packagist.org/packages/diplodok/yii2-unitegallery-widget)
 Виджет галереи Unite Gallery
 ============================
 Простейший виджет на основе галереи Unite Gallery
