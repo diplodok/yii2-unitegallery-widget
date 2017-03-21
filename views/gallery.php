@@ -7,13 +7,18 @@ Yii::$app->assetManager->bundles = [
     'yii\web\JqueryAsset' => false,
 ];
 
+$asset = new DiplodokAsset();
+$asset->js[] = "themes/$theme/ug-theme-$theme.js";
+if($theme == 'default') {
+    $asset->css[] = "themes/$theme/ug-theme-$theme.css";
+}
 DiplodokAsset::register($this);
 
 $script = <<< JS
     $("#$id_gallery").unitegallery({
         tiles_col_width: 120, 
         tiles_enable_transition: false, 
-        tiles_type: "$theme",
+        gallery_theme: "$theme",
         tiles_justified_row_height: 120,
         theme_preloading_height: 120,
         gallery_min_width: 120,

@@ -8,7 +8,7 @@ class DiplodokAsset extends AssetBundle {
     public $js = [
 	'js/jquery-11.0.min.js',
 	'js/unitegallery.js',
-	'themes/tiles/ug-theme-tiles.js'
+	//'themes/tiles/ug-theme-tiles.js'
     ];
     public $jsOptions = ['position' => View::POS_END];
     public $css = [
