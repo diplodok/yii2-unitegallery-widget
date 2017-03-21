@@ -5,10 +5,11 @@ use yii\web\AssetBundle;
 use yii\web\View;
 
 class DiplodokAsset extends AssetBundle {
+    public static $theme;
+    
     public $js = [
 	'js/jquery-11.0.min.js',
-	'js/unitegallery.js',
-	//'themes/tiles/ug-theme-tiles.js'
+	'js/unitegallery.js'
     ];
     public $jsOptions = ['position' => View::POS_END];
     public $css = [
@@ -22,5 +23,9 @@ class DiplodokAsset extends AssetBundle {
     {
         $this->sourcePath = '@vendor/diplodok/yii2-unitegallery-widget/unitegallery/';
         parent::init();
+        $this->js[] = 'themes/'.self::$theme.'/ug-theme-'.self::$theme.'.js';
+        if(self::$theme == 'default') {
+            $this->css[] = 'themes/'.self::$theme.'/ug-theme-'.self::$theme.'.css';
+        }
     }
 }

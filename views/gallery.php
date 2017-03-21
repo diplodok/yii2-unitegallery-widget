@@ -7,11 +7,7 @@ Yii::$app->assetManager->bundles = [
     'yii\web\JqueryAsset' => false,
 ];
 
-$asset = new DiplodokAsset();
-$asset->js[] = "themes/$theme/ug-theme-$theme.js";
-if($theme == 'default') {
-    $asset->css[] = "themes/$theme/ug-theme-$theme.css";
-}
+DiplodokAsset::$theme = $theme;
 DiplodokAsset::register($this);
 
 $script = <<< JS
