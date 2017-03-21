@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist diplodok/yii2-unitegallery-widget "dev-master"
+php composer.phar require --prefer-dist diplodok/yii2-unitegallery-widget "~1.0.0"
 ```
 
 or add
 
 ```
-"diplodok/yii2-unitegallery-widget": "dev-master"
+"diplodok/yii2-unitegallery-widget": "~1.0.0"
 ```
 
 to the require section of your `composer.json` file.
