@@ -9,7 +9,14 @@ class DiplodokAsset extends AssetBundle {
     
     public $js = [
 	'js/jquery-11.0.min.js',
-	'js/unitegallery.js'
+	'js/unitegallery.min.js',
+        'themes/carousel/ug-theme-carousel.js',
+        'themes/compact/ug-theme-compact.js',
+        'themes/default/ug-theme-default.js',
+        'themes/grid/ug-theme-grid.js',
+        'themes/slider/ug-theme-slider.js',
+        'themes/tiles/ug-theme-tiles.js',
+        'themes/tilesgrid/ug-theme-tilesgrid.js',
     ];
     public $jsOptions = ['position' => View::POS_END];
     public $css = [
@@ -23,7 +30,6 @@ class DiplodokAsset extends AssetBundle {
     {
         $this->sourcePath = '@vendor/diplodok/yii2-unitegallery-widget/unitegallery/';
         parent::init();
-        $this->js[] = 'themes/'.self::$theme.'/ug-theme-'.self::$theme.'.js';
         if(self::$theme == 'default') {
             $this->css[] = 'themes/'.self::$theme.'/ug-theme-'.self::$theme.'.css';
         }
