@@ -13,7 +13,7 @@ $script = <<< JS
     $("#$id_gallery").unitegallery({
         tiles_col_width: 120, 
         tiles_enable_transition: false, 
-        tiles_type: "grid",
+        tiles_type: "$theme",
         tiles_justified_row_height: 120,
         theme_preloading_height: 120,
         gallery_min_width: 120,

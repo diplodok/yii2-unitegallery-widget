@@ -20,6 +20,8 @@ class GalleryWidget extends Widget {
      */
     public $photos;
     
+    public $theme = 'grid'; // тема галереи
+
     public $title_gallery = ''; // заголовок галереи (опционально)
 
 
@@ -31,6 +33,7 @@ class GalleryWidget extends Widget {
         if(is_array($this->photos) && count($this->photos) > 0) {
             return $this->render('gallery', [
                 'id_gallery' => 'gallery_'.md5(uniqid().microtime(). rand(0, time())),
+                'theme' => $this->theme,
                 'title_gallery' => $this->title_gallery,
                 'photos' => $this->photos
             ]);
