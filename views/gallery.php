@@ -1,14 +1,9 @@
 <?php
 use yii\web\View;
-use yii\base\Event;
+use yii\web\Event;
 use diplodok\Gallerywidget\DiplodokAsset;
 
-Yii::$app->assetManager->bundles = [
-    'yii\web\JqueryAsset' => false,
-];
-
-DiplodokAsset::$theme = $theme;
-DiplodokAsset::register($this);
+DiplodokAsset::registerBundleWithTheme($this, $theme);
 
 $script = <<< JS
     $("#$id_gallery").unitegallery({
