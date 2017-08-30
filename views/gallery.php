@@ -26,7 +26,8 @@ if($title_gallery) {
 <div id="<?= $id_gallery ?>" class="panel">
         <?php
         foreach ($photos as $Image) {
-            $img = "<img src='".$Image['src']."' data-image='".$Image['src']."' ";
+            $thumb = isset($Image['thumb']) ? $Image['thumb'] : $Image['src'];
+            $img = "<img src='".$thumb."' data-image='".$Image['src']."' ";
             if (isset($Image['alt'])) {
                 $img .= "alt='".$Image['alt']."' ";
             }

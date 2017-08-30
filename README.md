@@ -34,9 +34,9 @@ Once the extension is installed, simply use it in your code by  :
         'title_gallery' => 'Заголовок', // опция
         'theme' => 'grid', // опция (по умолчанию тема grid)
         'photos' => [
-			['src' => '/images/1.jpg', 'alt' => '', 'description' => 'опция'],
-			['src' => '/images/2.jpg', 'alt' => '', 'description' => 'опция'],
-			['src' => '/images/3.jpg', 'alt' => '', 'description' => 'опция']
+			['thumb' => '/thumb/images/1.jpg', 'src' => '/images/1.jpg', 'alt' => '', 'description' => 'опция'],
+			['thumb' => '/thumb/images/2.jpg', 'src' => '/images/2.jpg', 'alt' => '', 'description' => 'опция'],
+			['thumb' => '/thumb/images/3.jpg', 'src' => '/images/3.jpg', 'alt' => '', 'description' => 'опция']
 		]); ?>
 ```
 Темы: grid, tiles, tilesgrid, slider, default, compact, carousel
