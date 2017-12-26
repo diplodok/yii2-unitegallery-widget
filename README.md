@@ -37,7 +37,7 @@ Once the extension is installed, simply use it in your code by  :
         'photos' => [
 			['thumb' => '/thumb/images/1.jpg', 'src' => '/images/1.jpg', 'alt' => '', 'description' => 'опция'],
 			['thumb' => '/thumb/images/2.jpg', 'src' => '/images/2.jpg', 'alt' => '', 'description' => 'опция'],
-			['thumb' => '/thumb/images/video.mp4', 'src' => '/images/video.jpg', 'alt' => '', 'description' => 'опция']
+			['thumb' => '/thumb/images/video.jpg', 'src' => '/video/video.mp4', 'alt' => '', 'description' => 'опция']
 		]); ?>
 ```
 Темы: grid, tiles, tilesgrid, slider, default, compact, carousel
