@@ -26,8 +26,15 @@ if($title_gallery) {
 <div id="<?= $id_gallery ?>" class="panel">
         <?php
         foreach ($photos as $Image) {
-            $thumb = isset($Image['thumb']) ? $Image['thumb'] : $Image['src'];
-            $img = "<img src='".$thumb."' data-image='".$Image['src']."' ";
+            if(substr($Image['src'], -3 ) == 'mp4') {
+                $thumb = '/image/video.png';
+                $img = "<img src='".$thumb."' data-image='".$thumb."' ";
+                $img .= 'data-type="html5video" ';
+                $img .= "data-videomp4='".$Image['src']."' ";
+            } else {
+                $thumb = isset($Image['thumb']) ? $Image['thumb'] : $Image['src'];
+                $img = "<img src='".$thumb."' data-image='".$Image['src']."' ";
+            }
             if (isset($Image['alt'])) {
                 $img .= "alt='".$Image['alt']."' ";
             }

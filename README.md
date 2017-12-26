@@ -1,6 +1,7 @@
 Виджет галереи Unite Gallery
 ============================
 Простейший виджет на основе галереи [Unite Gallery](http://unitegallery.net/)
+Вывод изображений и видео формата mp4.
 
 [![Latest Stable Version](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/v/stable.svg)](https://packagist.org/packages/diplodok/yii2-unitegallery-widget)[![Total Downloads](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/downloads.svg)](https://packagist.org/packages/diplodok/yii2-unitegallery-widget)[![Latest Unstable Version](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/v/unstable.svg)](https://packagist.org/packages/diplodok/yii2-unitegallery-widget)[![License](https://poser.pugx.org/diplodok/yii2-unitegallery-widget/license.svg)](https://packagist.org/packages/diplodok/yii2-unitegallery-widget)
 
@@ -36,7 +37,7 @@ Once the extension is installed, simply use it in your code by  :
         'photos' => [
 			['thumb' => '/thumb/images/1.jpg', 'src' => '/images/1.jpg', 'alt' => '', 'description' => 'опция'],
 			['thumb' => '/thumb/images/2.jpg', 'src' => '/images/2.jpg', 'alt' => '', 'description' => 'опция'],
-			['thumb' => '/thumb/images/3.jpg', 'src' => '/images/3.jpg', 'alt' => '', 'description' => 'опция']
+			['thumb' => '/thumb/images/video.mp4', 'src' => '/images/video.jpg', 'alt' => '', 'description' => 'опция']
 		]); ?>
 ```
 Темы: grid, tiles, tilesgrid, slider, default, compact, carousel
