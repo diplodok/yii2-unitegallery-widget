@@ -8,7 +8,7 @@ use yii\helpers\ArrayHelper;
 class DiplodokAsset extends AssetBundle {
     
     public $js = [
-	'js/jquery-11.0.min.js',
+	//'js/jquery-11.0.min.js',
 	'js/unitegallery.min.js',
     ];
     public $jsOptions = ['position' => View::POS_END];
